@@ -1,0 +1,15 @@
+import React from 'react'
+
+const ProjectCard = ({img, title, link}) => {
+  return (
+    <div>
+        <div className='bg-gray-900 rounded-2xl'>
+            <img src={img} alt="" className='rounded-t-2xl border-8 border-gray-900 object-top min-h-[300px] max-h-[300px] lg:max-h-[350px] lg:min-h-[350px] w-full' />
+            <h1 className='text-center pt-2 text-white'>{title}</h1>
+            <a className='block text-center hover:text-blue-500 pb-2 text-(--grey) italic' target='_blank' href={link}>[Link]</a>
+        </div>
+    </div>
+  )
+}
+
+export default ProjectCard
