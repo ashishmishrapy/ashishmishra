@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const About = () => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("summary");
 
   const toggleSection = (sectionName) => {
     setActiveSection(activeSection === sectionName ? null : sectionName);

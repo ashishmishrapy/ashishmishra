@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { GiHamburgerMenu, GiSun } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -26,12 +26,7 @@ const Navbar = () => {
               <NavLink to="/projects" className={linkClass}>Projects</NavLink>
             </li>
             <li>
-              <a href="https://drive.google.com/file/d/1N8y8ec84wxRzxanllozGMCQ5EbekSDS4/view?usp=drive_link" target="_blank" className={linkClass}>Resume</a>
-            </li>
-            <li>
-              <button className="text-xl">
-                <GiSun />
-              </button>
+              <a href="https://drive.google.com/file/d/1MOPR1z6kaQy0cMPuFCb7jR0McbYC1FNn/view?usp=drive_link" target="_blank">Resume</a>
             </li>
           </ul>
         </nav>
@@ -39,11 +34,6 @@ const Navbar = () => {
         {/* Mobile Menu Icons */}
         <nav className="md:hidden">
           <ul className="flex gap-5 text-(--grey) text-2xl">
-            <li>
-              <button>
-                <GiSun />
-              </button>
-            </li>
             <li>
               <button onClick={() => setMenu(!menu)}>
                 <GiHamburgerMenu />

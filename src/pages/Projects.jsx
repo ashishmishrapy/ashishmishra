@@ -3,15 +3,17 @@ import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
   let projectArray = [
-    {img : "img/reelify.webp", title : "Reelify - Instagram Video Downloader", link : "https://reelify-frontend-ptcj.onrender.com/"},
-    {img : "img/dbuuconnect.webp", title : "DbuuConnect", link : "https://dbuuconnect.vercel.app/"},
+    {name: "Portfolio", summary:"A simple portfolio showcasing my projects, skills, and personal information clearly.", title : "Ashish Mishra - Portfolio website", link : "https://ashishmishra-ai.vercel.app/"},
+    {name: "Reelify", summary:"Users submit Instagram reels and instantly receive downloadable videos with metadata.", title : "Reelify - Instagram Video Downloader", link : "https://reelify-frontend-ptcj.onrender.com/"},
+    {name: "DBUUConnect", summary: "DBUU platform helping students connect, chat, discover campus resources easily.", title : "DbuuConnect", link : "https://dbuuconnect.vercel.app/"},
+    {name: "AI SAAS Project", summary: "AI platform generating blogs, improving resumes, summarizing chats, captioning images.", title : "WriteWise AI", link : "/construction"},
   ]
   return (
     <div className="min-h-screen pt-[75px] p-1 md:px-5">
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4'>
         {
           projectArray.map((project, index)=>(
-            <ProjectCard key={index} img ={project.img} title={project.title} link={project.link} />
+            <ProjectCard key={index} name ={project.name} summary={project.summary} title={project.title} link={project.link} />
           ))
         }
       </div>

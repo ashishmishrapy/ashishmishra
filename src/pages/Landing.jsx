@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Landing = () => {
@@ -8,6 +7,7 @@ const Landing = () => {
       <div className="border-2 overflow-hidden shadow-2xl rounded-full lg:w-[250px] lg:h-[250px] w-[200px] mb-8 h-[200px]">
         <img
           src="img/pfp-artguru.webp"
+          loading="lazy"
           className="object-top object-cover w-full h-full"
           alt=""
         />
